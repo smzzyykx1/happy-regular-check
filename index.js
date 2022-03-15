@@ -1,9 +1,9 @@
 /**
  * @param {*} [dataType=[]] 参与校验provs的正则类型
  * @param {string} [value=''] 需要校验的参数
- * @return {*} 
+ * @return {*}
  */
-const happyRegularCheck = (dataType = [], value = '') => {
+const happyRegularCheck = (dataType = [],value = '',type = 'result' ) => {
     let matching = '^(';
 
     dataType.forEach((item, index) => {
